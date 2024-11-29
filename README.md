@@ -27,7 +27,7 @@ Plagiarism Detector — это инструмент для проверки те
 ### Шаги для установки:
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-/zhenimesov/PlagiarismDetector.git
+   git clone https://github.com/zhenimesov/PlagiarismDetector.git
    ```
 
 2. Перейдите в каталог проекта:
