@@ -1,7 +1,7 @@
 # Plagiarism Detector
 
 ## Автор
-Tamoha  
+Tamer
 Связаться со мной: [tamoha_123@mail.ru](mailto:tamoha_123@mail.ru)
 
 ## Описание проекта
@@ -28,7 +28,7 @@ Plagiarism Detector — это инструмент для проверки те
 ### Шаги для установки:
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/ваш-репозиторий/PlagiarismDetector.git
+   git clone https://github.com/ваш-/zhenimesov/PlagiarismDetector.git
    ```
 
 2. Перейдите в каталог проекта:
