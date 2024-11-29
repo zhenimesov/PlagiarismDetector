@@ -1,7 +1,7 @@
 # Plagiarism Detector
 
 ## Автор
-Tamer
+Tamer     
 Связаться со мной: [tamoha_123@mail.ru](mailto:tamoha_123@mail.ru)
 
 ## Описание проекта
