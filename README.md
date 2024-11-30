@@ -29,7 +29,10 @@ Plagiarism Detector — это инструмент для проверки те
    ```bash
    git clone https://github.com/zhenimesov/PlagiarismDetector.git
    ```
-
+   Скачайте requirements.txt:
+   ```bash
+   pip install -r requirements.txt
+   ```
 2. Перейдите в каталог проекта:
    ```bash
    cd PlagiarismDetector
