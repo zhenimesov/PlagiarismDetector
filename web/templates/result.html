@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plagiarism Check Result</title>
+    <title>Результат проверки на плагиат</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <style>
         body {
@@ -51,12 +51,13 @@
 </head>
 <body>
     <div class="container">
-        <h1>Plagiarism Check Result</h1>
-        <p class="result">Similarity Percentage</p>
+        <h1>Результат проверки на плагиат</h1>
+        <p class="result">Процент сходства</p>
+        <p>Если процент схожести 1%, это означает, что текст полностью совпадает с оригиналом (плагиат).</p>
+        <p>Если процент 0%, тексты абсолютно не схожи.</p>
         <p class="similarity">{{ similarity }}%</p>
-        <p>Your content is compared, and here is the result of the plagiarism check.</p>
-        <p>If the similarity percentage is high, we recommend reviewing the content for potential plagiarism.</p>
-        <a href="/" class="btn">Go Back</a>
+        <p>Ваш контент был проверен, и вот результат сравнения на плагиат.</p>
+        <a href="/" class="btn">Вернуться</a>
     </div>
 
     <script src="{{ url_for('static', filename='scripts.js') }}"></script>

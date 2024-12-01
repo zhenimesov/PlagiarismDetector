@@ -1,3 +1,10 @@
+import os
+import sys
+
+## НЕ ТРОГАТЬ либо потом не находит /src
+base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '../'))
+sys.path.insert(0, base_dir)
+
 from flask import Flask, render_template, request
 from src.plagiarism_checker import PlagiarismChecker
 from src.preprocessor import TextPreprocessor

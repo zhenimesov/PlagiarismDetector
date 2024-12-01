@@ -1,5 +1,5 @@
 from src.preprocessor import TextPreprocessor
-from src.similarity_calculator import JaccardSimilarity
+from src.similarity_calculator import JaccardSimilarityCalculator
 from src.plagiarism_checker import PlagiarismChecker
 
 def read_text_from_file(file_path: str) -> str:
@@ -11,9 +11,9 @@ def read_text_from_file(file_path: str) -> str:
         return text
 
 def main():
-    # Создаем объекты для предобработки текста и расчета схожести
+    # Объекты для предобработки текста и расчета схожести
     preprocessor = TextPreprocessor()  # Инициализация класса для предобработки текста
-    similarity_calculator = JaccardSimilarity()
+    similarity_calculator = JaccardSimilarityCalculator()
     plagiarism_checker = PlagiarismChecker(preprocessor, similarity_calculator)
 
     # Читаем текст из файлов
