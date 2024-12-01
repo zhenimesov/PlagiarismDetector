@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Plagiarism Checker</h1>
+
+    <form action="/check-files" method="POST" enctype="multipart/form-data">
+        <label for="original_file">Original File (txt):</label>
+        <input type="file" name="original_file" accept=".txt" required><br><br>
+
+        <label for="check_file">File to Check (txt):</label>
+        <input type="file" name="check_file" accept=".txt" required><br><br>
+
+        <button type="submit">Check Plagiarism</button>
+    </form>
+
+    <form action="/check-text" method="POST">
+        <label for="original_text">Original Text:</label>
+        <textarea name="original_text" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="text_to_check">Text to Check:</label>
+        <textarea name="text_to_check" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Check Plagiarism</button>
+    </form>
+
+</body>
+</html>
